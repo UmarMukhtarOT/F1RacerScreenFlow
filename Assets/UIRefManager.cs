@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UIRefManager : MonoBehaviour
 {
     public GameObject LoadingScreen;
-    public GameObject CongratulationsTitle, EarnMoreTitle, MainPanel;
+    public GameObject CongratulationsTitle, EarnMoreTitle;
 
     public Image LoadingFillBar;
     [Header("Player Attributes")]
