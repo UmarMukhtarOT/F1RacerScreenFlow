@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{109DCBA3-A0CC-606E-8FC0-6EF2C16DC2CA}</ProjectGuid>
+    <ProjectGuid>{7FBC785A-0B8D-EE2C-4487-2AAA31C80A1F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,29 +56,29 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\02_Scripts\Loading.cs" />
-    <Compile Include="Assets\Barrel\Scripts\BarrelColorManager.cs" />
-    <Compile Include="Assets\SimpleAndroidNotifications\NotificationParams.cs" />
-    <Compile Include="Assets\GDPR\PopupAnimationController.cs" />
     <Compile Include="Assets\AdvancedPlayerPrefsWindow\DemoScene\GUIView.cs" />
-    <Compile Include="Assets\02_Scripts\SplashScript.cs" />
-    <Compile Include="Assets\Garage-Model\Shaders And Scripts\MirrorReflection.cs" />
+    <Compile Include="Assets\02_Scripts\SoundManager.cs" />
+    <Compile Include="Assets\GeneralMenu.cs" />
+    <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
     <Compile Include="Assets\02_Scripts\CoinsManager.cs" />
-    <Compile Include="Assets\SimpleAndroidNotifications\NotificationIcon.cs" />
+    <Compile Include="Assets\02_Scripts\Loading.cs" />
+    <Compile Include="Assets\Garage-Model\Shaders And Scripts\MirrorReflection.cs" />
     <Compile Include="Assets\02_Scripts\MainMenu.cs" />
-    <Compile Include="Assets\Garage-Model\Shaders And Scripts\RotateGO.cs" />
+    <Compile Include="Assets\SimpleAndroidNotifications\NotificationParams.cs" />
+    <Compile Include="Assets\02_Scripts\PlayerSelection.cs" />
     <Compile Include="Assets\SimpleAndroidNotifications\NotificationExample.cs" />
     <Compile Include="Assets\Garage-Model\Shaders And Scripts\CameraRotator.cs" />
-    <Compile Include="Assets\GDPR\GDRPPopupCallbacks.cs" />
-    <Compile Include="Assets\SimpleAndroidNotifications\NotificationManager.cs" />
-    <Compile Include="Assets\ScaleUp.cs" />
     <Compile Include="Assets\02_Scripts\AllPrefrences.cs" />
-    <Compile Include="Assets\02_Scripts\SoundManager.cs" />
     <Compile Include="Assets\02_Scripts\DragMouseOrbit.cs" />
+    <Compile Include="Assets\SimpleAndroidNotifications\NotificationIcon.cs" />
+    <Compile Include="Assets\02_Scripts\SplashScript.cs" />
     <Compile Include="Assets\02_Scripts\TinyCarCustomizer.cs" />
-    <Compile Include="Assets\02_Scripts\PlayerSelection.cs" />
-    <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
-    <Compile Include="Assets\GeneralMenu.cs" />
+    <Compile Include="Assets\Garage-Model\Shaders And Scripts\RotateGO.cs" />
+    <Compile Include="Assets\GDPR\GDRPPopupCallbacks.cs" />
+    <Compile Include="Assets\GDPR\PopupAnimationController.cs" />
+    <Compile Include="Assets\ScaleUp.cs" />
+    <Compile Include="Assets\SimpleAndroidNotifications\NotificationManager.cs" />
+    <Compile Include="Assets\Barrel\Scripts\BarrelColorManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
@@ -310,9 +310,6 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.2f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="DOTweenPro">
-      <HintPath>Assets\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
-    </Reference>
     <Reference Include="DemiLib">
       <HintPath>Assets\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
     </Reference>
@@ -322,11 +319,14 @@
     <Reference Include="DOTween46">
       <HintPath>Assets\Demigiant\DOTween\DOTween46.dll</HintPath>
     </Reference>
-    <Reference Include="DOTween50">
-      <HintPath>Assets\Demigiant\DOTween\DOTween50.dll</HintPath>
-    </Reference>
     <Reference Include="DOTween43">
       <HintPath>Assets\Demigiant\DOTween\DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>Assets\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets\Demigiant\DOTween\DOTween50.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.2f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -709,7 +709,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{AB4FCC5E-B7C3-DC05-002A-EAFF4CD7C12E}</Project>
+      <Project>{5DB5CC22-F28B-D9A7-8252-2202EAFA96E9}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>

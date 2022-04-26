@@ -33,42 +33,41 @@ public class MainMenu : MonoBehaviour
         {
             _userName = value;
             PlayerPrefs.SetString("PlayerName", _userName);
+           
         }
     }
     // Start is called before the first frame update
     void Start()
     {
+       
+        
 
-        //if (RemoteValues.Instance.isShadowEnabled())
-        //{
-        //    QualitySettings.shadows = ShadowQuality.All;
-        //}
-        //else
-        //{ 
-        //   QualitySettings.shadows = ShadowQuality.Disable;
-
-        //}
         if (!PlayerPrefs.HasKey("FirstPlay"))
         {
             PlayerPrefs.SetInt("FirstPlay", 0);
-         //   nextScene = "01b_CarUnlockCutScene";
+            nextScene = "03_GamePlay";
+            PromptUserNamePanel();
+
+
         }
+        else
+        {
+
+            Debug.Log("user name is : "+ GetUserName());
+            UsernameDisplayText.text = GetUserName();
+            UserProfilePanel.SetActive(false);
+        }
+
+
+
 
         FillImage.fillAmount = 0;
         CoinTxt.text = CoinsManager.instance.Totalcoins + "";
         SoundManager.Instance.PlayBG(SoundManager.Instance.MMSound, 0.5f);
 
 
-        StartCoroutine(bannerlate());
 
-
-        //if (PlayerPrefs.GetInt("RemoveAds")==0)
-        //{
-
-
-        //}
-
-
+       
         Time.timeScale = 1;
         ClosePrivacy();
 
@@ -90,7 +89,7 @@ public class MainMenu : MonoBehaviour
 
     public string GetUserName()
     {
-        return _userName;
+        return userName;
 
     }
 
@@ -108,26 +107,7 @@ public class MainMenu : MonoBehaviour
 
 
 
-    IEnumerator bannerlate()
-    {
-        if (PlayerPrefs.GetInt("GdprAccepted") == 0)
-        {
-            Debug.Log("ads manager Initialized with Gdpr Not Accepted");
-
-            //AdsManagerWrapper.Instance.initialize(false);
-        }
-        else
-        {
-            Debug.Log("ads manager Initialized with Gdpr Accepted");
-            //AdsManagerWrapper.Instance.initialize(true);
-        }
-
-        yield return new WaitForSeconds(0);
-        //AdsManagerWrapper.Instance.ShowBannerSmart();
-
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
 
@@ -174,10 +154,7 @@ public class MainMenu : MonoBehaviour
     IEnumerator LevelStart()
     {
         yield return new WaitForSeconds(1.5f);
-        //if (PlayerPrefs.GetInt("FirstPlay")== 0)
-        //{
-        //    nextScene = "03_GamePlayStuntEasy";
-        //}
+        
 
         async = SceneManager.LoadSceneAsync(nextScene);
         yield return async;
