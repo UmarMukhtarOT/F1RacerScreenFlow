@@ -13,7 +13,8 @@ namespace ControlFreak2.UI
 [ExecuteInEditMode()]
 public class AutoContentFitter : MonoBehaviour
 	{
-	public RectTransform  source;
+	public RectTransform 
+		source;
 
 	
 

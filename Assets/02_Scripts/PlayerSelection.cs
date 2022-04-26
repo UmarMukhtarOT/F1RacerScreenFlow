@@ -1,31 +1,178 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 using UnityEngine.SceneManagement;
+using System;
 
 
 public class PlayerSelection : MonoBehaviour
 {
 
-   
+    [System.Serializable]
+    public class PlayerAttributes
+    {
+       
+        public string Name;
+
+        public Color DefaultColor;
+        public GameObject PlayerObject;
+        public Transform ActualPos;
+        [Range(0, 100)]
+        public int Speed;
+        [Range(0, 100)]
+        public int Handling;
+        [Range(0, 100)]
+        public int Acceleration;
+        public bool Locked;
+
+
+        public int amount;
+
+
+    }
+
+
+    [System.Serializable]
+    public class Selection_Elements
+    {
+        public GameObject LoadingScreen;
+        public GameObject CongratulationsTitle, EarnMoreTitle,MainPanel,CustomizerPanel;
+
+        public Image FillBar;
+        [Header("Player Attributes")]
+       
+
+        public Image Speed_Bar_Img;
+        public Image Handling_Bar_Img;
+        public Image Acceleration_Bar_Img;
+
+        public Text InfoText;
+        public Text TotalCash;
+
+
+        [Header("UI Buttons")]
+        public Button PlayBtn;
+        public GameObject NextBtn;
+        public GameObject PrevBtn;
+        public GameObject BuyStatusPanel;
+        public GameObject PricePanel;
+
+
+        public Text BuyStatusTitleTxt, BuyStatusPhraseTxt;
+        public Button BuyButton;
+        public Button CustomizeButton;
+    }
+    
+
+    [Header("Scene Selection")]
     public string PreviousScene;
     public string NextScene;
 
+    [Header("UI Elements")]
+    public Selection_Elements Selection_UI;
+
+    [Header("Player Attributes")]
+    public PlayerAttributes[] Players;
+
+
+
     public Transform DisplayPos;
+
+
+    AsyncOperation async = null;
     public static int current;
-   
+
     public GameObject OnPurcheseConfetti;
-    public static PlayerSelection Instance;
+    public GameObject CustomizerPromptPanel;
     
+    public GameObject[] ObjToHideOnPrompt;
+    public GameObject[] Custimzerobjects;
+    public GameObject[] MainPanelObj;
+    public GameObject[] UnderLineimg;
+    public GameObject[] DecalStickers;
+    public Transform [] PaintableBodies;
+   
 
 
-    [Header("UI Elements Refrence")]
-    public UIRefManager UI_RefScript;
+    //public TinyCarCustomizer Customizer;
 
-    [Space(10)]
-    [Header("Vehical's Attributes")]
-    public VehicleStatsScriptableObject[] Players;
+    public static PlayerSelection Instance;
 
-    private GameObject currentVehicle;
+
+
+    public void PromptCustomizer()
+    {
+        ////if (Customizer.IsCustomizedBefore(current))
+        //{
+        //    CustomizerPromptPanel.SetActive(true);
+        //    HideOnPrompt(false);
+        //}
+        //else
+        //{
+        //    OpenCustomizer();
+
+        //}
+
+    }
+
+
+    public void HidePrompt()
+    {
+
+        CustomizerPromptPanel.SetActive(false);
+        HideOnPrompt(true);
+
+
+    }
+
+    public void OpenCustomizer()
+    {
+
+
+        CustomizerPromptPanel.SetActive(false);
+
+        HideOnPrompt(true);
+
+        foreach (var item in Custimzerobjects)
+        {
+            item.SetActive(true);
+        }
+        foreach (var item in MainPanelObj)
+        {
+            item.SetActive(false);
+        }
+        DragMouseOrbit.CantMoveAll = true;
+
+      
+
+        Selection_UI.MainPanel.SetActive(false);
+     //   Customizer.StartCustomizer();
+        
+
+    }
+
+    
+    public void CloseCustomizer()
+    {
+        Debug.Log("sdfadfgfsdgsfbv");
+        Selection_UI.MainPanel.SetActive(true);
+        GetPlayerInfo();
+
+        foreach (var item in Custimzerobjects)
+        {
+            item.SetActive(false);
+        }
+        foreach (var item in MainPanelObj)
+        {
+            item.SetActive(true);
+        }
+       
+
+        // PaintableBodies[current].parent = Players[current].PlayerObject.transform;
+        DragMouseOrbit.CantMoveAll = false;
+
+    }
+
 
 
     void Start()
@@ -34,9 +181,18 @@ public class PlayerSelection : MonoBehaviour
 
 
 
+       
+        foreach (var item in Players)
+        {
+
+            item.Name = item.PlayerObject.name;
+
+        }
+
+
      
 
-      
+        //  Customizer.LoadAllTexturesOnStart();
         if (Instance == null)
         {
             Instance = this;
@@ -46,33 +202,35 @@ public class PlayerSelection : MonoBehaviour
 
 
 
-        UI_RefScript.LoadingFillBar.fillAmount = 0.7f;
-        UI_RefScript.LoadingScreen.SetActive(false);
+        Selection_UI.FillBar.fillAmount = 0.7f;
+        Selection_UI.LoadingScreen.SetActive(false);
 
 
 
-        UI_RefScript.TotalCash.text = CoinsManager.instance.Totalcoins.ToString();
+        Selection_UI.TotalCash.text = CoinsManager.instance.Totalcoins.ToString();
 
-        PlayerPrefs.SetString(Players[0].vehicleName, "Unlocked");
+        PlayerPrefs.SetString(Players[0].Name, "Unlocked");
 
         GetPlayerInfo();
 
         SoundManager.Instance.PlayBG(SoundManager.Instance.MMSound, 0.5f);
 
        
+
     }
 
-    private void ShowVehicle()
-    {
-        if (currentVehicle)
-            Destroy(currentVehicle);
-
-        currentVehicle = Instantiate(Players[current].PlayerObject);
-    }
-
+    
     void Update()
     {
-       
+        //if (async != null)
+        //{
+        //    Selection_UI.FillBar.fillAmount = async.progress;
+        //    if (async.progress >= 0.9f)
+        //    {
+        //        Selection_UI.FillBar.fillAmount = 1.0f;
+        //    }
+        //}
+
        
     }
 
@@ -83,12 +241,10 @@ public class PlayerSelection : MonoBehaviour
 
         for (int i = 0; i < Players.Length; i++)
         {
-            PlayerPrefs.SetString(Players[i].vehicleName, "Unlocked");
+            PlayerPrefs.SetString(Players[i].Name, "Unlocked");
         }
         /// unlocl all vehicle 
     }
-
-
 
 
     public void MoreGames()
@@ -98,99 +254,94 @@ public class PlayerSelection : MonoBehaviour
 
 
 
-    void UpdateUIstatus()
-    {
-
-        if (Players[current].IsLocked)
-        {
-
-            UI_RefScript.PlayBtn.gameObject.SetActive(false);
-            UI_RefScript.BuyButton.gameObject.SetActive(true);
-
-            UI_RefScript.InfoText.text = Players[current].Price.ToString();
-
-        }
-        else
-        {
-
-            UI_RefScript.PlayBtn.gameObject.SetActive(true);
-            UI_RefScript.BuyButton.gameObject.SetActive(false);
-
-        }
-
-
-
-        if (current == 0)
-        {
-            UI_RefScript.PrevBtn.SetActive(false);
-            UI_RefScript.NextBtn.SetActive(true);
-            UI_RefScript.BuyStatusPanel.SetActive(false);
-        }
-        else if (current == Players.Length - 1)
-        {
-            UI_RefScript.PrevBtn.SetActive(true);
-            UI_RefScript.NextBtn.SetActive(false);
-        }
-        else
-        {
-            UI_RefScript.PrevBtn.SetActive(true);
-            UI_RefScript.NextBtn.SetActive(true);
-        }
-
-    }
-
-
-
-
-
-
     void GetPlayerInfo()
     {
 
 
-        UpdateUIstatus();
-
-
-
-
-
-
-       
-     //   UI_RefScript.Speed_Bar_Img.fillAmount = Players[current].speed * 0.01f;
-      //  UI_RefScript.Boost_Bar_Img.fillAmount = Players[current].boost * 0.01f;
-     //   UI_RefScript.Acceleration_Bar_Img.fillAmount = Players[current].acceleration * 0.01f;
-
-
-
-       
-       
-
-        if (Players[current].Price <= CoinsManager.instance.Totalcoins)
+        foreach (var item in Players)
         {
-            UI_RefScript.InfoText.color = Color.green;
+            item.PlayerObject.SetActive(false);
+        }
+       //// MeshRenderer rend = PaintableBodies[current].GetComponent<MeshRenderer>();
+      //  Customizer.LoadCarTexture(current, rend);
+
+        Players[current].PlayerObject.SetActive(true);
+        
+
+
+        if (Players[current].Locked)
+        {
+
+            Selection_UI.PlayBtn.gameObject.SetActive(false);
+            Selection_UI.BuyButton.gameObject.SetActive(true);
+            Selection_UI.CustomizeButton.gameObject.SetActive(false);
+            Selection_UI.InfoText.text = Players[current].amount.ToString();
 
         }
         else
         {
-            UI_RefScript.InfoText.color = Color.red;
+
+            Selection_UI.PlayBtn.gameObject.SetActive(true);
+            Selection_UI.BuyButton.gameObject.SetActive(false);
+            Selection_UI.CustomizeButton.gameObject.SetActive(true);
+
         }
 
 
-        if (PlayerPrefs.GetString(Players[current].vehicleName) == "Unlocked")
+        if (current == 0)
+        {
+            Selection_UI.PrevBtn.SetActive(false);
+            Selection_UI.NextBtn.SetActive(true);
+            Selection_UI.BuyStatusPanel.SetActive(false);
+        }
+        else if (current == Players.Length - 1)
+        {
+            Selection_UI.PrevBtn.SetActive(true);
+            Selection_UI.NextBtn.SetActive(false);
+        }
+        else
+        {
+            Selection_UI.PrevBtn.SetActive(true);
+            Selection_UI.NextBtn.SetActive(true);
+        }
+
+
+       
+        Selection_UI.Speed_Bar_Img.fillAmount = Players[current].Speed * 0.01f;
+        Selection_UI.Handling_Bar_Img.fillAmount = Players[current].Handling * 0.01f;
+        Selection_UI.Acceleration_Bar_Img.fillAmount = Players[current].Acceleration * 0.01f;
+
+
+
+       
+       
+
+        if (Players[current].amount <= CoinsManager.instance.Totalcoins)
+        {
+            Selection_UI.InfoText.color = Color.green;
+
+        }
+        else
+        {
+            Selection_UI.InfoText.color = Color.red;
+        }
+
+
+        if (PlayerPrefs.GetString(Players[current].Name) == "Unlocked")
         {
           
-            UI_RefScript.PlayBtn.gameObject.SetActive(true);
-           
-            UI_RefScript.BuyButton.gameObject.SetActive(false);
-            UI_RefScript.InfoText.color = Color.green;
+            Selection_UI.PlayBtn.gameObject.SetActive(true);
+            Selection_UI.CustomizeButton.gameObject.SetActive(true);
+            Selection_UI.BuyButton.gameObject.SetActive(false);
+            Selection_UI.InfoText.color = Color.green;
 
-            UI_RefScript.PricePanel.SetActive(false);
+            Selection_UI.PricePanel.SetActive(false);
            
 
         }
         else
         {
-            UI_RefScript.PricePanel.SetActive(true);
+            Selection_UI.PricePanel.SetActive(true);
 
 
 
@@ -199,31 +350,22 @@ public class PlayerSelection : MonoBehaviour
 
     }
 
-
-
-
-
-
-
-
-
-
     public void Buy()
     {
         OnPurcheseConfetti.SetActive(false);
-        if (Players[current].Price <= CoinsManager.instance.Totalcoins)
+        if (Players[current].amount <= CoinsManager.instance.Totalcoins)
         {
-            CoinsManager.instance.DedCoins(Players[current].Price);
-            UI_RefScript.TotalCash.text = "COINS :" + CoinsManager.instance.Totalcoins.ToString();
+            CoinsManager.instance.DedCoins(Players[current].amount);
+            Selection_UI.TotalCash.text = "COINS :" + CoinsManager.instance.Totalcoins.ToString();
 
-            Players[current].IsLocked = false;
-            PlayerPrefs.SetString(Players[current].vehicleName, "Unlocked");
-            UI_RefScript.InfoText.color = Color.green;
+            Players[current].Locked = false;
+            PlayerPrefs.SetString(Players[current].Name, "Unlocked");
+            Selection_UI.InfoText.color = Color.green;
            
 
-            UI_RefScript.PlayBtn.gameObject.SetActive(true);
-            UI_RefScript.BuyButton.gameObject.SetActive(false);
-           
+            Selection_UI.PlayBtn.gameObject.SetActive(true);
+            Selection_UI.BuyButton.gameObject.SetActive(false);
+            Selection_UI.CustomizeButton.gameObject.SetActive(true);
 
             OnPurcheseConfetti.SetActive(true);
            
@@ -232,12 +374,12 @@ public class PlayerSelection : MonoBehaviour
 
         {
 
+            HideOnPrompt(false);
 
-
-            UI_RefScript.BuyStatusPanel.SetActive(true);
-            UI_RefScript.CongratulationsTitle.SetActive(false);
-            UI_RefScript.EarnMoreTitle.SetActive(true);
-            UI_RefScript.BuyStatusPhraseTxt.text = "Insufficient coins";
+            Selection_UI.BuyStatusPanel.SetActive(true);
+            Selection_UI.CongratulationsTitle.SetActive(false);
+            Selection_UI.EarnMoreTitle.SetActive(true);
+            Selection_UI.BuyStatusPhraseTxt.text = "Insufficient coins";
 
         }
         GetPlayerInfo();
@@ -251,7 +393,7 @@ public class PlayerSelection : MonoBehaviour
         current--;
         GetPlayerInfo();
 
-        PlayerPrefs.SetInt("SelectedPlayer",current);
+       
         SoundManager.Instance.PlayBtnClick();
     }
 
@@ -259,8 +401,6 @@ public class PlayerSelection : MonoBehaviour
     {
         current++;
         GetPlayerInfo();
-        PlayerPrefs.SetInt("SelectedPlayer", current);
-
         SoundManager.Instance.PlayBtnClick();
     }
 
@@ -273,13 +413,18 @@ public class PlayerSelection : MonoBehaviour
 
         PlayerPrefs.SetInt("SelectedPlayer", current);
        // Debug.Log("SelectedPlayer Pref val: " + PlayerPrefs.GetInt("SelectedPlayer"));
-       
-        UI_RefScript.LoadingFillBar.fillAmount = 0.9f;
+        HideOnPrompt(false);
+        Selection_UI.FillBar.fillAmount = 0.9f;
 
-        UI_RefScript.LoadingScreen.SetActive(true);
+        Selection_UI.LoadingScreen.SetActive(true);
         SoundManager.Instance.PlayBtnClick();
         StartCoroutine(LevelStart());
     }
+
+   
+
+
+
 
 
     IEnumerator LevelStart()
@@ -294,18 +439,31 @@ public class PlayerSelection : MonoBehaviour
     public void closeStatusPanel()
     {
         Debug.Log(" clicked");
-        UI_RefScript.BuyStatusPanel.SetActive(false);
-     
+        Selection_UI.BuyStatusPanel.SetActive(false);
+        HideOnPrompt(true);
 
     }
+
+
+
+
 
     public void BackBtn()
     {
 
-       
-        UI_RefScript.LoadingScreen.SetActive(true);
+        HidePrompt();
+        Selection_UI.LoadingScreen.SetActive(true);
         SceneManager.LoadScene(PreviousScene.ToString());
     }
 
-   
+      public void HideOnPrompt(bool check)
+      {
+        foreach (var item in ObjToHideOnPrompt)
+        {
+            item.SetActive(check);
+        }
+
+      } 
+
+
 }

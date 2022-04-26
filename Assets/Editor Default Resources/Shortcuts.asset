@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19b38093ec0974ead94e58f69bcfaa10, type: 3}
   m_Name: Shortcuts
   m_EditorClassIdentifier: 
-  columns: 1
+  columns: 3
   types:
   - columnTitle: Scene
     typeName: Scene
@@ -21,4 +21,3 @@ MonoBehaviour:
     - 71be0138160929c4ea240ea1e8fe136d
     - 20b0c917eed5d8346ae8e897d49f6a9d
     - 1e7b40b497889c449bd1002bd2f4013a
-    - fe36d8c6f37ec48a9a6ece149a7a0d08

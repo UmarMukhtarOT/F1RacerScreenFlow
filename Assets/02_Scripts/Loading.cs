@@ -72,7 +72,7 @@ public class Loading : MonoBehaviour
             else
             {
                 //  Debug.Log("ads manager Initialized with Gdpr Accepted");
-               // AdsManagerWrapper.Instance.initialize(true);
+             //   AdsManagerWrapper.Instance.initialize(true);
             }
 
         }
