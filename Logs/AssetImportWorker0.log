@@ -15,11 +15,11 @@ D:/UmarMukhtarNewDrive/TestProjects/F1RacerScreenFlow
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53996
+64087
 Successfully changed project path to: D:/UmarMukhtarNewDrive/TestProjects/F1RacerScreenFlow
 D:/UmarMukhtarNewDrive/TestProjects/F1RacerScreenFlow
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 38.00 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 79.86 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.2f1 (8fd9074bf66c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/Resources/UnitySubsystems
@@ -35,147 +35,481 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56804
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56148
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002925 seconds.
+Registered in 0.004849 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 36.45 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 69.36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.974 seconds
+- Completed reload, in  4.510 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003240 seconds.
+Registered in 0.010668 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.65 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.009 seconds
+- Completed reload, in  2.212 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1323 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 64.0 MB.
-System memory in use after: 64.1 MB.
+System memory in use before: 65.1 MB.
+System memory in use after: 65.2 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1770.
-Total: 2.063900 ms (FindLiveObjects: 0.179400 ms CreateObjectMapping: 0.057700 ms MarkObjects: 1.722500 ms  DeleteObjects: 0.102900 ms)
+Total: 3.666400 ms (FindLiveObjects: 0.384800 ms CreateObjectMapping: 0.092400 ms MarkObjects: 3.066500 ms  DeleteObjects: 0.120900 ms)
 
 ========================================================================
 Received Import Request.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/coin_inventory.png
+  artifactKey: Guid(b028f5c7051ba7449b53234c5c7d6167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/coin_inventory.png using Guid(b028f5c7051ba7449b53234c5c7d6167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9691786729bf5da88a775597ecff3370') in 0.155324 seconds
+  Import took 0.162046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000530 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles
+  artifactKey: Guid(fe3a6b3cfe2ee5244b946b7c031a19c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles using Guid(fe3a6b3cfe2ee5244b946b7c031a19c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0ef60cc95a5b9abda5d9f32277bc62') in 0.016064 seconds
+  Import took 0.021736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000410 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/car_title.png
+  artifactKey: Guid(acdddee64484b764184752d88dbcb89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/car_title.png using Guid(acdddee64484b764184752d88dbcb89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25950ff5032ba342b502debdcd2d92d6') in 0.040663 seconds
+  Import took 0.044638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/cash_inventory.png
+  artifactKey: Guid(9029a1c2d8e6dd84f8564d39d2895b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/cash_inventory.png using Guid(9029a1c2d8e6dd84f8564d39d2895b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ada47fdb610f11b7b4a02da558b94b8') in 0.017037 seconds
+  Import took 0.023478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000537 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/core_upgrade_garage.png
+  artifactKey: Guid(5496df5ae651d5f4b986aa756c494637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/core_upgrade_garage.png using Guid(5496df5ae651d5f4b986aa756c494637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b9a7358373f40c2c727bdf7a30371ae') in 0.028545 seconds
+  Import took 0.034063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/car_panel_garage_updated.png
+  artifactKey: Guid(eb3192d7a2a605a4789ae471832d7da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/car_panel_garage_updated.png using Guid(eb3192d7a2a605a4789ae471832d7da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7773701eb1261b4a942db9e78b1f17f1') in 0.037746 seconds
+  Import took 0.042984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.359415 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Garage--Updated.png
+  artifactKey: Guid(b4c1d4a1f6d7ec04bb5f6f7e2f0968b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Garage--Updated.png using Guid(b4c1d4a1f6d7ec04bb5f6f7e2f0968b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f98995ccc0cea26c6bcf31d9f56e228') in 0.086843 seconds
+  Import took 0.094824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.048742 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/left_slider_main_menu.png
+  artifactKey: Guid(f2512e099436af14ea892d16441eb225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/left_slider_main_menu.png using Guid(f2512e099436af14ea892d16441eb225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6f908cd08e948427344f38f6ae25d98') in 0.011698 seconds
+  Import took 0.015050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.676197 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/place_on_xp_bar_tip_main_menu.png
+  artifactKey: Guid(ec748ab7ee3e20e4cb351c4e2420c028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/place_on_xp_bar_tip_main_menu.png using Guid(ec748ab7ee3e20e4cb351c4e2420c028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef3847540ed2f371f3d217fe45a33f67') in 0.020018 seconds
+  Import took 0.026597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.597348 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Rank.png
+  artifactKey: Guid(b2653d7cdb50ef043b66cffd254ea578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Rank.png using Guid(b2653d7cdb50ef043b66cffd254ea578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc42e5e266e9507d4a4de77a65d3ee73') in 0.012932 seconds
+  Import took 0.018490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.510059 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Stats_bg.png
+  artifactKey: Guid(155994e799aee504d9fcd935ed74e997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Stats_bg.png using Guid(155994e799aee504d9fcd935ed74e997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51a4964a856f5bd1a52e355255defeaf') in 0.014834 seconds
+  Import took 0.020757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.539775 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Stats_fill_bar_above_50_.png
+  artifactKey: Guid(da887b28529197441a9eccd9295ceb28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Stats_fill_bar_above_50_.png using Guid(da887b28529197441a9eccd9295ceb28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab433d9700b1a2753fb6d687d2d6fa9d') in 0.013748 seconds
+  Import took 0.019992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.330295 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Stats_fill_bar_above_70_.png
+  artifactKey: Guid(9087d97b7ac857040b8f09d0da868afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Stats_fill_bar_above_70_.png using Guid(9087d97b7ac857040b8f09d0da868afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69d036e9b3ac0ff8f18d613aa6ca535c') in 0.012211 seconds
+  Import took 0.019151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.407921 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Stats_fill_bar_below_50_.png
+  artifactKey: Guid(7a9e057d9c913254a93a32c3ed396a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Stats_fill_bar_below_50_.png using Guid(7a9e057d9c913254a93a32c3ed396a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eddddbdcc0377a848562e7429a47f08') in 0.019063 seconds
+  Import took 0.025258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.398283 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Stats_fill_bar_bg_stats_main_menu.png
+  artifactKey: Guid(db9da5abc50f8134cac6af5012a82071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Stats_fill_bar_bg_stats_main_menu.png using Guid(db9da5abc50f8134cac6af5012a82071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b04041d57d5e65466db04367cd9775e2') in 0.017861 seconds
+  Import took 0.023762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.832286 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Stats_Panel.png
+  artifactKey: Guid(2ac159106f29ec34da333a51cb1cd28f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Stats_Panel.png using Guid(2ac159106f29ec34da333a51cb1cd28f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24b9076406492bd6ffdf42fed04c05f7') in 0.024339 seconds
+  Import took 0.031266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.511796 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Xp_fill_bar.png
+  artifactKey: Guid(f16cfa22deb4edf44865fc9f7fd8e1bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Xp_fill_bar.png using Guid(f16cfa22deb4edf44865fc9f7fd8e1bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfbaa449109dd451d3a71a255441db5a') in 0.011467 seconds
+  Import took 0.015347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.036860 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Xp_fill_bar_bg.png
+  artifactKey: Guid(64c3f2327e02e024294b93ec6562b02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Xp_fill_bar_bg.png using Guid(64c3f2327e02e024294b93ec6562b02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '866e7edb795d32e61ccb5d327770e315') in 0.011047 seconds
+  Import took 0.014682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.580914 seconds.
   path: Assets/00_Art/UI_By_Jameela/F1_UI/Loading/Bg.png
   artifactKey: Guid(46399ae8430021f4497ac84a708c6b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Loading/Bg.png using Guid(46399ae8430021f4497ac84a708c6b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2b3c4fd207d1e2c6ce4ed77f0780dad') in 0.145107 seconds
-  Import took 0.148953 seconds .
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Loading/Bg.png using Guid(46399ae8430021f4497ac84a708c6b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9601a5ebc04b43501abee9596ec2293d') in 0.266930 seconds
+  Import took 0.278052 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000297 seconds.
+  Time since last request: 0.000870 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Loading/car.png
+  artifactKey: Guid(4ff60a6bdbb4d3944ba12324e45e29ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Loading/car.png using Guid(4ff60a6bdbb4d3944ba12324e45e29ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b0b0c2f82d93b385fc56ba9dd57e4a0') in 0.078924 seconds
+  Import took 0.086393 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Edit-profile/Edit_profile.png
+  artifactKey: Guid(6dbf9edf52e6ff347b45b369be3202b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Edit-profile/Edit_profile.png using Guid(6dbf9edf52e6ff347b45b369be3202b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e86834bf868bb178b8cd7523266c3fd') in 0.083993 seconds
+  Import took 0.088917 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000590 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Edit-profile/Edit_profile_bg.png
+  artifactKey: Guid(b8d8ddb59ccfc0f4da82e53018269d2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Edit-profile/Edit_profile_bg.png using Guid(b8d8ddb59ccfc0f4da82e53018269d2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f34a0db2aa69ef0dd7122b1b5015521') in 0.058582 seconds
+  Import took 0.064840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
   path: Assets/00_Art/UI_By_Jameela/F1_UI/Loading/loading_bg.png
   artifactKey: Guid(458f71d3c8cc89d4487cf6c670b86e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Loading/loading_bg.png using Guid(458f71d3c8cc89d4487cf6c670b86e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fac76a8aacfaea899fffe7a8ca728041') in 0.026879 seconds
-  Import took 0.029432 seconds .
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Loading/loading_bg.png using Guid(458f71d3c8cc89d4487cf6c670b86e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae0406c00123ed5f7fc1c428caaae9da') in 0.037434 seconds
+  Import took 0.045835 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000321 seconds.
+  Time since last request: 0.000663 seconds.
   path: Assets/00_Art/UI_By_Jameela/F1_UI/Loading/loading_fill_bar.png
   artifactKey: Guid(5f29059292a0bf648b85f83256bf5b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Loading/loading_fill_bar.png using Guid(5f29059292a0bf648b85f83256bf5b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d890912833bd107ed5433b40b88054') in 0.040027 seconds
-  Import took 0.043728 seconds .
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Loading/loading_fill_bar.png using Guid(5f29059292a0bf648b85f83256bf5b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '171a23568d793bdaf612e12b7d38fbbf') in 0.019398 seconds
+  Import took 0.028304 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000207 seconds.
+  Time since last request: 0.000201 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Edit-profile/edit_button.png
+  artifactKey: Guid(fd038e88f15c8404785ea5f53cfbaf17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Edit-profile/edit_button.png using Guid(fd038e88f15c8404785ea5f53cfbaf17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9668e37fca326b5ca8dcd2e132128b7f') in 0.048314 seconds
+  Import took 0.052110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Edit-profile/edit_profile_panel.png
+  artifactKey: Guid(d589354c669e5c047aa7f0d7685679b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Edit-profile/edit_profile_panel.png using Guid(d589354c669e5c047aa7f0d7685679b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13abce30b57603aaa2d6abdcd56b0203') in 0.048764 seconds
+  Import took 0.053528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000695 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Edit-profile/name_age_bg.png
+  artifactKey: Guid(9726c3cf1e1b2ef43b802379d5af10b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Edit-profile/name_age_bg.png using Guid(9726c3cf1e1b2ef43b802379d5af10b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '909bd4d0a0b37d02c6714c764d574153') in 0.019150 seconds
+  Import took 0.025334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
   path: Assets/00_Art/UI_By_Jameela/F1_UI/Loading/loading_text.png
   artifactKey: Guid(e7ff5f33212f3df41a792b21367b194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Loading/loading_text.png using Guid(e7ff5f33212f3df41a792b21367b194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe839f9ea0bafd4df612d5e31d18a1e2') in 0.012381 seconds
-  Import took 0.015089 seconds .
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Loading/loading_text.png using Guid(e7ff5f33212f3df41a792b21367b194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2d431b077b2b2f75793cbe92fac78ad') in 0.040099 seconds
+  Import took 0.045818 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000232 seconds.
-  path: Assets/00_Art/UI_By_Jameela/F1_UI/Loading/moving_car.png
-  artifactKey: Guid(0b245cfc24af9774fa196cd81d4c2849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Loading/moving_car.png using Guid(0b245cfc24af9774fa196cd81d4c2849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e6081bb7b8d3b40003afc36896482a2') in 0.043654 seconds
-  Import took 0.046716 seconds .
+  Time since last request: 0.000356 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Edit-profile/dropdown_button.png
+  artifactKey: Guid(8cd13095a08ecbe428fa322217e73331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Edit-profile/dropdown_button.png using Guid(8cd13095a08ecbe428fa322217e73331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '273ca8a4f4e585946f5f0d2463bda37b') in 0.013819 seconds
+  Import took 0.018920 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 20.460655 seconds.
-  path: Assets/00_Art/UI_By_Jameela/F1_UI/Loading/moving_car.png
-  artifactKey: Guid(0b245cfc24af9774fa196cd81d4c2849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Loading/moving_car.png using Guid(0b245cfc24af9774fa196cd81d4c2849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef5ee683e756a8ad292b3044d0df3d9') in 0.086793 seconds
-  Import took 0.090014 seconds .
+  Time since last request: 0.017407 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Loading/loading_text.png
+  artifactKey: Guid(e7ff5f33212f3df41a792b21367b194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Loading/loading_text.png using Guid(e7ff5f33212f3df41a792b21367b194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2d431b077b2b2f75793cbe92fac78ad') in 0.026953 seconds
+  Import took 0.032921 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.177121 seconds.
-  path: Assets/00_Art/UI_By_Jameela/F1_UI/Loading/Loading.png
-  artifactKey: Guid(54bab7655362ec14f80901ac5f637bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Loading/Loading.png using Guid(54bab7655362ec14f80901ac5f637bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6deab3045ca656cdb000096394ca85bb') in 0.067628 seconds
-  Import took 0.071971 seconds .
+  Time since last request: 55.400299 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/place_on_xp_bar_tip_main_menu.png
+  artifactKey: Guid(ec748ab7ee3e20e4cb351c4e2420c028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/place_on_xp_bar_tip_main_menu.png using Guid(ec748ab7ee3e20e4cb351c4e2420c028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7002da3cc24e7fd40a801722720062b') in 0.011251 seconds
+  Import took 0.014444 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 274.805786 seconds.
-  path: Assets/00_Art/UI_By_Jameela/F1_UI/Edit-profile/avatar.png
-  artifactKey: Guid(4d2c7255d0acfb1479cb1b45fed86e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Edit-profile/avatar.png using Guid(4d2c7255d0acfb1479cb1b45fed86e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97614f9ed60a0f6ce21a597660700b34') in 0.024870 seconds
-  Import took 0.028895 seconds .
+  Time since last request: 372.253888 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/car_panel_garage_updated.png
+  artifactKey: Guid(eb3192d7a2a605a4789ae471832d7da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/car_panel_garage_updated.png using Guid(eb3192d7a2a605a4789ae471832d7da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b4d8c851855c5159204ad4cbf495353') in 0.119943 seconds
+  Import took 0.130541 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.263872 seconds.
-  path: Assets/00_Art/UI_By_Jameela/F1_UI/Edit-profile/avatar.png
-  artifactKey: Guid(4d2c7255d0acfb1479cb1b45fed86e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Edit-profile/avatar.png using Guid(4d2c7255d0acfb1479cb1b45fed86e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f579d354670b3e71b3e0c0fc53d96e74') in 0.022861 seconds
-  Import took 0.026664 seconds .
+  Time since last request: 0.000295 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Rank.png
+  artifactKey: Guid(b2653d7cdb50ef043b66cffd254ea578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Rank.png using Guid(b2653d7cdb50ef043b66cffd254ea578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04690b87a32736f3b512ceaa855983dc') in 0.023031 seconds
+  Import took 0.027898 seconds .
 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003370 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.930 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1317 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78.4 MB.
-System memory in use after: 78.5 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1786.
-Total: 1.911300 ms (FindLiveObjects: 0.173200 ms CreateObjectMapping: 0.053800 ms MarkObjects: 1.613900 ms  DeleteObjects: 0.069600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Import Request.
-  Time since last request: 3579.719370 seconds.
-  path: Assets/01_Prefabs/GeneralMenu.prefab
-  artifactKey: Guid(5ebe3df2ae910ad4fbba3257194ead13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/01_Prefabs/GeneralMenu.prefab using Guid(5ebe3df2ae910ad4fbba3257194ead13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5807663c40ce1c13c3ab413014cfc57c') in 0.098320 seconds
-  Import took 0.102848 seconds .
+  Time since last request: 0.000454 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/coin_inventory.png
+  artifactKey: Guid(b028f5c7051ba7449b53234c5c7d6167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/coin_inventory.png using Guid(b028f5c7051ba7449b53234c5c7d6167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3007a76e017bed330dcf5c2f387555c3') in 0.022498 seconds
+  Import took 0.028422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000443 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/car_title.png
+  artifactKey: Guid(acdddee64484b764184752d88dbcb89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/car_title.png using Guid(acdddee64484b764184752d88dbcb89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8bfb938b00a692b10e993c28c993583') in 0.035655 seconds
+  Import took 0.038953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/cash_inventory.png
+  artifactKey: Guid(9029a1c2d8e6dd84f8564d39d2895b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/cash_inventory.png using Guid(9029a1c2d8e6dd84f8564d39d2895b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd810218530f6a51d1a02603114a3d338') in 0.015568 seconds
+  Import took 0.021160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000877 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/core_upgrade_garage.png
+  artifactKey: Guid(5496df5ae651d5f4b986aa756c494637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/core_upgrade_garage.png using Guid(5496df5ae651d5f4b986aa756c494637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd8c31c296559759c68cd8cef7377c3d') in 0.033262 seconds
+  Import took 0.039151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/cash_inventory.png
+  artifactKey: Guid(9029a1c2d8e6dd84f8564d39d2895b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/cash_inventory.png using Guid(9029a1c2d8e6dd84f8564d39d2895b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd810218530f6a51d1a02603114a3d338') in 0.009339 seconds
+  Import took 0.011905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Garage--Updated.png
+  artifactKey: Guid(b4c1d4a1f6d7ec04bb5f6f7e2f0968b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Garage--Updated.png using Guid(b4c1d4a1f6d7ec04bb5f6f7e2f0968b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1201230512362ea874e17d0200034b3b') in 0.066486 seconds
+  Import took 0.069027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/core_upgrade_garage.png
+  artifactKey: Guid(5496df5ae651d5f4b986aa756c494637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/core_upgrade_garage.png using Guid(5496df5ae651d5f4b986aa756c494637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd8c31c296559759c68cd8cef7377c3d') in 0.040673 seconds
+  Import took 0.045099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Garage--Updated.png
+  artifactKey: Guid(b4c1d4a1f6d7ec04bb5f6f7e2f0968b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Garage--Updated.png using Guid(b4c1d4a1f6d7ec04bb5f6f7e2f0968b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1201230512362ea874e17d0200034b3b') in 0.083150 seconds
+  Import took 0.088062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/left_slider_main_menu.png
+  artifactKey: Guid(f2512e099436af14ea892d16441eb225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/left_slider_main_menu.png using Guid(f2512e099436af14ea892d16441eb225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8763f505a20a8debdaac2c8a592591d') in 0.021047 seconds
+  Import took 0.027429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.356144 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/Funskter.png
+  artifactKey: Guid(e0e26e4e87a69ed4a87e4583660bba18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/Funskter.png using Guid(e0e26e4e87a69ed4a87e4583660bba18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '145301048ca2b55655b379a2626f52e4') in 0.036031 seconds
+  Import took 0.046680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001721 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/Funskter.png
+  artifactKey: Guid(e0e26e4e87a69ed4a87e4583660bba18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/Funskter.png using Guid(e0e26e4e87a69ed4a87e4583660bba18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '145301048ca2b55655b379a2626f52e4') in 0.023504 seconds
+  Import took 0.028567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.342514 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/Funskter_2.png
+  artifactKey: Guid(0352981a18d267e4fae35ff242d7985a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/Funskter_2.png using Guid(0352981a18d267e4fae35ff242d7985a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b76b84532526985a6540cfb28d8c8bf2') in 0.084686 seconds
+  Import took 0.091642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.848793 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/honey_ride.png
+  artifactKey: Guid(f533851c28a1ed248bdcdbe5ab7992f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/honey_ride.png using Guid(f533851c28a1ed248bdcdbe5ab7992f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc42c89f6ad415874e04f12d9eb4ddad') in 0.035892 seconds
+  Import took 0.043452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.292239 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/honey_ryder-2.png
+  artifactKey: Guid(6f0ee6061c2d8764ca92bbb5705c27cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/honey_ryder-2.png using Guid(6f0ee6061c2d8764ca92bbb5705c27cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f28c9b7a4122aaa95f5507b9398d8999') in 0.089994 seconds
+  Import took 0.098343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.243180 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/Roller_coaster.png
+  artifactKey: Guid(66e396decf4a39d4f9a3069fc4d9d30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/Roller_coaster.png using Guid(66e396decf4a39d4f9a3069fc4d9d30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9347639df6d4b4ac6a7e24716bebcded') in 0.021474 seconds
+  Import took 0.027923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.388632 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/Roller_coaster_2.png
+  artifactKey: Guid(4df7a145f75f81447a4d04ec8b17bbbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/Roller_coaster_2.png using Guid(4df7a145f75f81447a4d04ec8b17bbbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22dc988b38c32329f24951738d606115') in 0.082649 seconds
+  Import took 0.088343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.199990 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/Speedo.png
+  artifactKey: Guid(6be0c5aa4296a804ba9396b8e27f6c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/Speedo.png using Guid(6be0c5aa4296a804ba9396b8e27f6c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e0785675add157df12fcec006ff34aa') in 0.012351 seconds
+  Import took 0.017796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.465283 seconds.
+  path: Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/speedo_2.png
+  artifactKey: Guid(fac7bc7198eb6ef45b42a8b77bde03f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/00_Art/UI_By_Jameela/F1_UI/Garage/Titles/speedo_2.png using Guid(fac7bc7198eb6ef45b42a8b77bde03f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b5cbb5b73d2b3544e5867f1894976fb') in 0.078573 seconds
+  Import took 0.086892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 886.622200 seconds.
+  path: Assets/02_Scripts/TinyCarCustomizer.cs
+  artifactKey: Guid(9e5f6aaf59f729340ba8e0500b4f9d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02_Scripts/TinyCarCustomizer.cs using Guid(9e5f6aaf59f729340ba8e0500b4f9d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a59185b8167468582a21e74423d0aea1') in 0.012463 seconds
+  Import took 0.018371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.705958 seconds.
+  path: Assets/03_Scenes
+  artifactKey: Guid(75592ee49718dee44928e5e9dcef1367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Scenes using Guid(75592ee49718dee44928e5e9dcef1367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74d3285c717936504fcfc54f31f7e7a4') in 0.021363 seconds
+  Import took 0.029346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003303 seconds.
+  path: Assets/03_Scenes
+  artifactKey: Guid(75592ee49718dee44928e5e9dcef1367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Scenes using Guid(75592ee49718dee44928e5e9dcef1367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74d3285c717936504fcfc54f31f7e7a4') in 0.013612 seconds
+  Import took 0.023387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.025878 seconds.
+  path: Assets/02_Scripts/SplashScript.cs
+  artifactKey: Guid(357d0234e523235449beca636bd7d14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/02_Scripts/SplashScript.cs using Guid(357d0234e523235449beca636bd7d14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a55dab6f41b340b38450d0b24505625') in 0.016958 seconds
+  Import took 0.022152 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
