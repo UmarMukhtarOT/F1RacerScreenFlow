@@ -26,6 +26,12 @@ public class GeneralMenu : MonoBehaviour
             }
 
         }
+
+        if (screenNum==1)
+        {
+
+            DisablCurrentScreenBtn();
+        }
         
     }
 
@@ -39,7 +45,7 @@ public class GeneralMenu : MonoBehaviour
 
 
 
-    void SetUPScreen(int Num)
+  public  void SetUPScreen(int Num)
     {
 
         lowerButtons[Num].interactable = false;
@@ -53,14 +59,14 @@ public class GeneralMenu : MonoBehaviour
                 break;
 
             case 1:
-            loadingPanel.SetActive(true);
-            SceneManager.LoadScene(garageSceneName);
+           
+           StartCoroutine(LoadLevel(garageSceneName));
            
                 break;
 
             case 2:
-            loadingPanel.SetActive(true);
-            SceneManager.LoadScene(gamePlaySceneName);
+            
+           StartCoroutine(LoadLevel(gamePlaySceneName));
            
                 break;
             case 3:
@@ -77,16 +83,42 @@ public class GeneralMenu : MonoBehaviour
 
 
 
+  }
+
+
+
+
+    IEnumerator LoadLevel(string Name)
+    {
+        foreach (var item in lowerButtons)
+        {
+            item.gameObject.SetActive(false);
+        }
+        loadingPanel.SetActive(true);
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(Name);
+
+    }
+
+
+
+    public void LoadMainMenu()
+    {
+
+        StartCoroutine(LoadLevel(mainMenuSeneName));
+
     }
 
 
 
 
+    public void DisablCurrentScreenBtn()
+    {
+        lowerButtons[screenNum].interactable = false;
 
 
 
-
-
+    }
 
 
 

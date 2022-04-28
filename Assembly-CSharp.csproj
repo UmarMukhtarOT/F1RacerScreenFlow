@@ -79,6 +79,7 @@
     <Compile Include="Assets\ScaleUp.cs" />
     <Compile Include="Assets\SimpleAndroidNotifications\NotificationManager.cs" />
     <Compile Include="Assets\Barrel\Scripts\BarrelColorManager.cs" />
+    <Compile Include="Assets\02_Scripts\PlayerPrefKeys.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />

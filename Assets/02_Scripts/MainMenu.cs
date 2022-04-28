@@ -19,6 +19,9 @@ public class MainMenu : MonoBehaviour
     public InputField inputField;
     private string _userName;
 
+    public GameObject[] Players;
+    public GameObject[] VehicleNameImages;
+
 
 
     public string userName
@@ -71,7 +74,7 @@ public class MainMenu : MonoBehaviour
         Time.timeScale = 1;
         ClosePrivacy();
 
-      
+        SetSelectedPlayer();
     }
 
     public void PromptUserNamePanel()
@@ -102,6 +105,19 @@ public class MainMenu : MonoBehaviour
         UsernameDisplayText.text = GetUserName();
 
         UserProfilePanel.SetActive(false);
+
+    }
+
+
+
+    public void SetSelectedPlayer()
+    { 
+    
+        int current = PlayerPrefs.GetInt("SelectedPlayer");
+        VehicleNameImages[current].SetActive(true);
+        Players[current].SetActive(true);
+
+
 
     }
 

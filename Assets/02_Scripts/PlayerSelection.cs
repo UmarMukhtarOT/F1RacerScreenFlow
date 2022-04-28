@@ -60,7 +60,7 @@ public class PlayerSelection : MonoBehaviour
 
         public Text BuyStatusTitleTxt, BuyStatusPhraseTxt;
         public Button BuyButton;
-        public Button CustomizeButton;
+        public Button PlayButtonGenericMenu;
     }
     
 
@@ -90,10 +90,11 @@ public class PlayerSelection : MonoBehaviour
     public GameObject[] MainPanelObj;
     public GameObject[] UnderLineimg;
     public GameObject[] DecalStickers;
+    
     public Transform [] PaintableBodies;
-   
 
 
+    public GameObject[] VehicleNameImages;
     //public TinyCarCustomizer Customizer;
 
     public static PlayerSelection Instance;
@@ -119,7 +120,7 @@ public class PlayerSelection : MonoBehaviour
     public void HidePrompt()
     {
 
-        CustomizerPromptPanel.SetActive(false);
+       // CustomizerPromptPanel.SetActive(false);
         HideOnPrompt(true);
 
 
@@ -141,7 +142,7 @@ public class PlayerSelection : MonoBehaviour
         {
             item.SetActive(false);
         }
-        DragMouseOrbit.CantMoveAll = true;
+     //   DragMouseOrbit.CantMoveAll = true;
 
       
 
@@ -169,7 +170,7 @@ public class PlayerSelection : MonoBehaviour
        
 
         // PaintableBodies[current].parent = Players[current].PlayerObject.transform;
-        DragMouseOrbit.CantMoveAll = false;
+       // DragMouseOrbit.CantMoveAll = false;
 
     }
 
@@ -177,7 +178,7 @@ public class PlayerSelection : MonoBehaviour
 
     void Start()
     {
-        current = PlayerPrefs.GetInt("SelectedPlayer");
+        current = PlayerPrefs.GetInt(PlayerPrefKeys.SelectedVehicleIndex);
 
 
 
@@ -202,7 +203,7 @@ public class PlayerSelection : MonoBehaviour
 
 
 
-        Selection_UI.FillBar.fillAmount = 0.7f;
+       // Selection_UI.FillBar.fillAmount = 0.7f;
         Selection_UI.LoadingScreen.SetActive(false);
 
 
@@ -262,10 +263,14 @@ public class PlayerSelection : MonoBehaviour
         {
             item.PlayerObject.SetActive(false);
         }
-       //// MeshRenderer rend = PaintableBodies[current].GetComponent<MeshRenderer>();
-      //  Customizer.LoadCarTexture(current, rend);
+      foreach (var item in VehicleNameImages)
+        {
+            item.SetActive(false);
+        }
+       
 
         Players[current].PlayerObject.SetActive(true);
+        VehicleNameImages[current].SetActive(true);
         
 
 
@@ -274,7 +279,7 @@ public class PlayerSelection : MonoBehaviour
 
             Selection_UI.PlayBtn.gameObject.SetActive(false);
             Selection_UI.BuyButton.gameObject.SetActive(true);
-            Selection_UI.CustomizeButton.gameObject.SetActive(false);
+            Selection_UI.PlayButtonGenericMenu.interactable = false;
             Selection_UI.InfoText.text = Players[current].amount.ToString();
 
         }
@@ -283,7 +288,7 @@ public class PlayerSelection : MonoBehaviour
 
             Selection_UI.PlayBtn.gameObject.SetActive(true);
             Selection_UI.BuyButton.gameObject.SetActive(false);
-            Selection_UI.CustomizeButton.gameObject.SetActive(true);
+            Selection_UI.PlayButtonGenericMenu.interactable = true;
 
         }
 
@@ -331,22 +336,22 @@ public class PlayerSelection : MonoBehaviour
         {
           
             Selection_UI.PlayBtn.gameObject.SetActive(true);
-            Selection_UI.CustomizeButton.gameObject.SetActive(true);
+            Selection_UI.PlayButtonGenericMenu.interactable = true;
             Selection_UI.BuyButton.gameObject.SetActive(false);
             Selection_UI.InfoText.color = Color.green;
 
-            Selection_UI.PricePanel.SetActive(false);
+             //Selection_UI.PricePanel.SetActive(false);
            
 
         }
-        else
-        {
-            Selection_UI.PricePanel.SetActive(true);
+        //else
+        //{
+        //    Selection_UI.PricePanel.SetActive(true);
 
 
 
 
-        }
+        //}
 
     }
 
@@ -365,7 +370,7 @@ public class PlayerSelection : MonoBehaviour
 
             Selection_UI.PlayBtn.gameObject.SetActive(true);
             Selection_UI.BuyButton.gameObject.SetActive(false);
-            Selection_UI.CustomizeButton.gameObject.SetActive(true);
+            Selection_UI.PlayButtonGenericMenu.interactable = true;
 
             OnPurcheseConfetti.SetActive(true);
            
@@ -411,11 +416,8 @@ public class PlayerSelection : MonoBehaviour
 
         Players[current].PlayerObject.SetActive(false);
 
-        PlayerPrefs.SetInt("SelectedPlayer", current);
-       // Debug.Log("SelectedPlayer Pref val: " + PlayerPrefs.GetInt("SelectedPlayer"));
+        PlayerPrefs.SetInt(PlayerPrefKeys.SelectedVehicleIndex, current);
         HideOnPrompt(false);
-        Selection_UI.FillBar.fillAmount = 0.9f;
-
         Selection_UI.LoadingScreen.SetActive(true);
         SoundManager.Instance.PlayBtnClick();
         StartCoroutine(LevelStart());
